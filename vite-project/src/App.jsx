@@ -1,266 +1,479 @@
 import styled from "@emotion/styled";
-import image1 from "./images/icon-supervisor.svg";
-import image2 from "./images/icon-calculator.svg";
-import image3 from "./images/icon-karma.svg";
-import image4 from "./images/icon-team-builder.svg";
+import image1 from "./assets/images/icon-facebook.svg";
+import image2 from "./assets/images/icon-twitter.svg";
+import image3 from "./assets/images/icon-instagram.svg";
+import image4 from "./assets/images/icon-youtube.svg";
+import { RiArrowDropUpFill } from "react-icons/ri";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 function App() {
   return (
     <>
-      <Container>
-        <TextSection>
-          <TextSection1>Reliable, efficient delivery</TextSection1>
-          <TextSection2>Powered by Technology</TextSection2>
-          <TextSection3>
-            Our Artificial Intelligence powered tools use millions of project
-            data <br /> points to ensure that your project is successful
-          </TextSection3>
-        </TextSection>
+      <BodyContainer>
+        <HeaderContainer>
+          <TitleContainer>
+            <Title>Social Media Dashbord</Title>
+            <SubTitle>Total Followers:23,004</SubTitle>
+          </TitleContainer>
 
-        <CardSection>
-          <LeftSection>
-            <Card>
-              <Subcard>
-                <CardTitle> Supervisor</CardTitle>
-                <CardBodyText>
-                  Monitors activity to identify project roadblocks
-                </CardBodyText>
-                <CardImageHolder>
-                  <CardImage src={image1}></CardImage>
-                </CardImageHolder>
-              </Subcard>
-            </Card>
-          </LeftSection>
+          <IconContainer>
+            <Subject>Dark Mode</Subject>
+          </IconContainer>
+        </HeaderContainer>
 
-          <MiddleSection>
-            <Card2>
-              <Subcard>
-                <CardTitle> Team Builder</CardTitle>
-                <CardBodyText>
-                  Scans our talent network to create the optimal team for your
-                  project
-                </CardBodyText>
-                <CardImageHolder>
-                  <CardImage src={image4}></CardImage>
-                </CardImageHolder>
-              </Subcard>
-            </Card2>
+        <CardContainer>
+          <Card>
+            <MediaContainer>
+              <Image src={image1} alt="facebook" />
+              <MediaContent>@nathanf</MediaContent>
+            </MediaContainer>
 
-            <Card3>
-              <Subcard>
-                <CardTitle> Karma</CardTitle>
-                <CardBodyText>
-                  Regularly evaluates our talent to ensure quality
-                </CardBodyText>
-                <CardImageHolder>
-                  <CardImage src={image3}></CardImage>
-                </CardImageHolder>
-              </Subcard>
-            </Card3>
-          </MiddleSection>
-          <RightSection>
-            <Card4>
-              <Subcard>
-                <CardTitle> Calculator</CardTitle>
-                <CardBodyText>
-                  Uses data from past projects to provide better delivery
-                  estimates
-                </CardBodyText>
-                <CardImageHolder>
-                  <CardImage src={image2}></CardImage>
-                </CardImageHolder>
-              </Subcard>
-            </Card4>
-          </RightSection>
-        </CardSection>
-      </Container>
+            <Followers>1987</Followers>
+            <FollowersTitle>Followers</FollowersTitle>
+
+            <NewFollower>12 Today</NewFollower>
+          </Card>
+
+          <Card2>
+            <MediaContainer>
+              <Image src={image2} alt="facebook" />
+              <MediaContent>@nathanf</MediaContent>
+            </MediaContainer>
+
+            <Followers>1044</Followers>
+            <FollowersTitle>Followers</FollowersTitle>
+
+            <NewFollower>99 Today</NewFollower>
+          </Card2>
+
+          <Card3>
+            <MediaContainer>
+              <Image src={image3} alt="facebook" />
+              <MediaContent>@realnathanf</MediaContent>
+            </MediaContainer>
+
+            <Followers>11k</Followers>
+            <FollowersTitle>Followers</FollowersTitle>
+
+            <NewFollower>1099 Today</NewFollower>
+          </Card3>
+
+          <Card4>
+            <MediaContainer>
+              <Image src={image4} alt="facebook" />
+              <MediaContent>Nathan F</MediaContent>
+            </MediaContainer>
+
+            <Followers>8239</Followers>
+            <FollowersTitle>Subscribers</FollowersTitle>
+
+            <NewFollower>144 Today</NewFollower>
+          </Card4>
+        </CardContainer>
+
+        <NewInfo>Overview-Today</NewInfo>
+
+        <InfoContainer>
+          <SmallCard>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Page Views</SmallCardTitle>
+                <Image src={image1} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>87</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  3%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard>
+
+          <SmallCard2>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Page Views</SmallCardTitle>
+                <Image src={image1} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>52</SmallCardInfo>
+                <SmallCardInfo22>
+                  {" "}
+                  <MdOutlineArrowDropDown />
+                  2%
+                </SmallCardInfo22>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard2>
+
+          <SmallCard3>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Page Views</SmallCardTitle>
+                <Image src={image3} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>5462</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  2257%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard3>
+
+          <SmallCard4>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Profile Views</SmallCardTitle>
+                <Image src={image3} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>52k</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  1375%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard4>
+        </InfoContainer>
+
+        <InfoContainer>
+          <SmallCard>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Retweets</SmallCardTitle>
+                <Image src={image2} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>117</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  303%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard>
+
+          <SmallCard2>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Likes</SmallCardTitle>
+                <Image src={image2} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>507</SmallCardInfo>
+                <SmallCardInfo22>
+                  {" "}
+                  <MdOutlineArrowDropDown />
+                  553%
+                </SmallCardInfo22>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard2>
+
+          <SmallCard3>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Page Views</SmallCardTitle>
+                <Image src={image4} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>107</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  19%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard3>
+
+          <SmallCard4>
+            <InfoWrapper>
+              <Info1>
+                <SmallCardTitle>Total Views</SmallCardTitle>
+                <Image src={image4} alt="facebook" />
+              </Info1>
+              <Info2>
+                <SmallCardInfo>1407</SmallCardInfo>
+                <SmallCardInfo2>
+                  {" "}
+                  <RiArrowDropUpFill />
+                  12%
+                </SmallCardInfo2>
+              </Info2>
+            </InfoWrapper>
+          </SmallCard4>
+        </InfoContainer>
+      </BodyContainer>
     </>
   );
 }
 
 export default App;
 
-const CardImage = styled.img``;
+const SmallCardInfo2 = styled.div`
+  font-size: 12px;
+  font-weight: bold;
+  align-self: center;
+  color: #3aa593;
+  margin-top: 10px;
+`;
 
-const Subcard = styled.div`
-  width: 80%;
-  height: 80%;
+const SmallCardInfo22 = styled.div`
+  font-size: 12px;
+  font-weight: bold;
+  align-self: center;
+  color: red;
+  margin-top: 10px;
+`;
+
+const SmallCardInfo = styled.div`
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+`;
+
+const Info2 = styled.div`
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+`;
+
+const SmallCardTitle = styled.div`
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #949dbe;
+`;
+
+const Info1 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+`;
+
+const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: auto;
 `;
 
-const CardImageHolder = styled.div`
-  width: 100%;
-  height: 64px;
+const SmallCard = styled.div`
+  width: 270px;
+  height: 130px;
+  padding: 8px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
 `;
 
-const CardBodyText = styled.div`
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(79, 82, 101, 0.5);
+const SmallCard2 = styled(SmallCard)`
+  width: 270px;
+  height: 130px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+`;
+
+const SmallCard3 = styled(SmallCard)`
+  width: 270px;
+  height: 130px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+`;
+
+const SmallCard4 = styled(SmallCard)`
+  width: 270px;
+  height: 130px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+`;
+
+const InfoContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  width: 80%;
+  height: 150px;
+`;
+
+const NewInfo = styled.div`
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
   margin-top: 10px;
-  flex: 1;
-  display: flex;
+  margin-left: 150px;
 `;
 
-const CardTitle = styled.div`
-  font-weight: 600;
-  font-size: 17px;
-  color: rgba(79, 82, 101);
+const NewFollower = styled.div`
+  color: #1db489;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 10px;
+`;
+
+const FollowersTitle = styled.div`
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #a0a7b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+`;
+
+const Followers = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 43px;
+  font-weight: bold;
+`;
+
+const MediaContent = styled.div`
+  font-size: 12px;
+  margin-left: 5px;
+  color: #a0a7b8;
+`;
+
+const Image = styled.img`
+  height: 20px;
+  width: 20px;
+`;
+
+const MediaContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
 `;
 
 const Card = styled.div`
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-top: 5px solid #44d3d2;
+  width: 270px;
+  height: 210px;
   display: flex;
   justify-content: center;
-  align-items: center;
-`;
-
-const LeftSection = styled.div`
-  width: 340px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 425px) {
-  height: auto;
-  margin-bottom: 20px;
-`;
-
-const Card2 = styled.div`
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-top: 5px solid #ec5355;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 425px) {
-  margin-bottom: 20px;
-
-`;
-
-const Card3 = styled.div`
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-top: 5px solid #fcae4a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const MiddleSection = styled.div`
-  width: 340px;
-  height: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  @media screen and (max-width: 425px) {
-  height: auto;
-  margin-bottom: 20px;
+  background-color: #252b43;
+  border-radius: 8px;
+  border-top: 5px solid blue;
 `;
 
-const RightSection = styled.div`
-  width: 340px;
-  height: 100%;
+const Card2 = styled(Card)`
+  width: 270px;
+  height: 210px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 425px) {
-  height: auto;
-  margin-bottom: 20px;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+  border-top: 5px solid blue;
 `;
 
-const Card4 = styled.div`
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-top: 5px solid #5e9cdf;
+const Card3 = styled(Card)`
+  width: 270px;
+  height: 210px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+  border-top: 5px solid #f49579;
 `;
 
-const TextSection3 = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(79, 82, 101, 0.5);
-  text-align: center;
-  margin-top: 20px;
-
-  @media screen and (max-width: 425px) {
-    margin-bottom: 50px;
-    font-size: 12px;
-    width: 80%;
-  }
-`;
-
-const TextSection2 = styled.div`
-  font-size: 36px;
-  font-weight: 600;
-  color: #4f5265;
-
-  @media screen and (max-width: 425px) {
-  font-size: 19px;
-`;
-
-const TextSection1 = styled.div`
-  font-size: 37px;
-  font-weight: 200;
-  color: #4f5265;
-
-  @media screen and (max-width: 425px) {
-  margin-top: 50px;
-  font-size: 20px;
-`;
-
-const CardSection = styled.div`
-  width: 1100px;
-  height: 540px;
+const Card4 = styled(Card)`
+  width: 270px;
+  height: 210px;
   display: flex;
-  margin-bottom: 50px;
-  justify-content: space-between;
-
-  @media screen and (max-width: 425px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
+  justify-content: center;
+  flex-direction: column;
+  background-color: #252b43;
+  border-radius: 8px;
+  border-top: 5px solid red;
 `;
 
-const TextSection = styled.div`
-  width: 100%;
+const CardContainer = styled.div`
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  width: 80%;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  @media screen and (max-width: 425px) {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 `;
 
-const Container = styled.div`
-  width: 100%;
-  background-color: #fafafa;
+const Subject = styled.div`
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin-left: auto;
+`;
+const IconContainer = styled.div`
+  width: 40%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+`;
+
+const SubTitle = styled.div`
+  font-size: 15px;
+  color: #a0a7b8;
+`;
+
+const Title = styled.div`
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+`;
+
+const TitleContainer = styled.div`
+color:white
+width:50%
+height:100px`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const ContentContainer = styled.div`
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  color: white;
+`;
+const BodyContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: #20222f;
 `;
